@@ -1,0 +1,7 @@
+{% import "components/_icons.njk" as icons %}
+
+<header class="absolute top:0 left:0 z:10 w:100p h:56 flex flex:col align-items:center justify-content:center sm:px:48 {% if theme == 'dark' %}color:ink-3-i{% endif %}">
+    <div class="container flex justify-content:center py:32">
+        {{ icons.wordmark('w:64') }}
+    </div>
+</header>

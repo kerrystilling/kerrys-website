@@ -1,6 +1,6 @@
 ---
 layout: "main.njk"
-seoTitle: "Acme: The search and tab title"
+seoTitle: "Kerry Stilling: The search and tab title"
 seoDescription: "This is the description that shows up in search engines."
 ogTitle: "This is the title that shows up in social cards"
 ogDesc: "This is the description that shows up in social cards"
@@ -9,25 +9,15 @@ ogImageAlt: "This is the alt text for social cards images"
 theme: light
 changefreq: daily
 ---
-{% import "components/_forms.njk" as forms %}
 
-<main>
+<main data-page="home">
 
-    <section class="section section:py">
-        <div class="container flex flex:col sm:grid grid-cols:2 gap:48">
+    <section class="section section:py min-h:100vh bg:rose-md">
+        <div class="container flex flex:col align-items:center gap:48 text:center pb:48">
             <div class="flex flex:col align-items:start gap:16">
-                <h1 class="font:8xl semibold tracking:tighter leading:110">
-                    The website template that means business
+                <h1 data-headline class="font:serif font:12vw sm:font:8xl md:font:11xl lg:font:120 light tracking:tighter leading:110">
+                    Imaginative designer with <div class="italic bg:sheet-4 inline-flex px:8">mediocre</div> engineering skills
                 </h1>
-                <p class="font:3xl leading:150 tracking:tighter color:ink-1">
-                    Increase efficiency, quality, and revenue <span class="space:nowrap">with the</span> Acme website template today.
-                </p>
-                <a href="#" class="btn btn:primary btn:lg">
-                    Try for free
-                </a>
-            </div>
-            <div class="w:100p">
-                {{ forms.sales(theme=theme) }}
             </div>
         </div>
     </section>

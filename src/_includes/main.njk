@@ -48,7 +48,7 @@
         <div class="relative w:100p">
 
             {# Header #}
-            {% include "components/_header.njk" %}
+            {% include "components/_header-simple.njk" %}
             
             {# Nesting for smooth scroll if wanted later on #}
             <div id="smooth-wrapper">
@@ -66,9 +66,6 @@
 
         <!-- Scripts -->
         <script src="/assets/javascript/main.js"></script>
-        {% if base.url == base.domain %}
-            <script defer data-domain="saasmarketing.site" src="https://plausible.io/js/script.tagged-events.js"></script>
-        {% endif %}
     </body>
 
 </html>

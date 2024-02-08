@@ -1,12 +1,12 @@
 module.exports = {
     url: process.env.URL || "http://localhost:8080",
-    domain: "https://saasmarketing.site",
-    name: "Acme",
+    domain: "https://kerrystilling.com",
+    name: "Kerry Stilling",
 
-    twitterHandle: "@acme",
-    twitterLink: "https://twitter.com/acme",
-    githubLink: "https://github.com/acme",
-    linkedinLink: "https://www.linkedin.com/company/acme/",
+    twitterHandle: "@kerrystilling",
+    twitterLink: "https://twitter.com/kerrystilling",
+    githubLink: "https://github.com/kerrystilling",
+    linkedinLink: "https://www.linkedin.com/in/kerrystilling/",
 
     salesLink: "/request-demo/",
     salesText: "Get a demo",
