@@ -12,12 +12,57 @@ changefreq: daily
 
 <main data-page="home">
 
-    <section class="section section:py min-h:100vh bg:rose-md">
-        <div class="container flex flex:col align-items:center gap:48 text:center pb:48">
-            <div class="flex flex:col align-items:start gap:16">
+    <section data-hero class="section section:py min-h:100vh bg:rose-md">
+        <div data-hero-morph class="absolute w:640 h:640 bg:black bg-opacity:10"></div>
+        <div class="container flex flex:col align-items:center gap:48 text:center">
+            <div class="flex flex:col align-items:start gap:16 pb:48">
                 <h1 data-headline class="font:serif font:12vw sm:font:8xl md:font:11xl lg:font:120 light tracking:tighter leading:110">
                     Imaginative designer with <div class="italic bg:sheet-4 inline-flex px:8">mediocre</div> engineering skills
                 </h1>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section:py">
+        <div class="container flex flex:row align-items:center justify-content:center gap:48 text:center">
+            <div class="relative flex flex:col align-items:center gap:16 pb:48 text:left max-w:576 w:100p">
+                <p class="font:5xl text:center light tracking:tighter leading:150">
+                    Tucked in a pine forest in <mark data-hover-1="trigger" class="bg:orange-md cursor:pointer">rural WI</mark>, <span class="space:nowrap">I currently</span> spend my days designing and building landing pages for <mark class="bg:lime-md cursor:pointer">Hims & Hers</mark>
+                </p>
+                {# graphics #}
+                <div data-hover-1="img" class="absolute w:100p h:100p pointer-events:none" style="visibility:hidden; opacity:0;">
+                    <div class="absolute top:n80 left:n128 w:128 h:128 bg:orange-md"></div>
+                    <div class="absolute bottom:n72 right:n144 w:144 h:128 bg:orange-md"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section:py">
+        <div class="container flex flex:row align-items:center gap:48 text:center">
+            <div class="flex flex:col align-items:start gap:16 pb:48 text:left width:100%">
+                <h2 class="font:5xl light tracking:tighter leading:110">
+                    Daydream
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                </p>
+            </div>
+            <div class="flex flex:col align-items:start gap:16 pb:48 text:left width:100%">
+                <h2 class="font:5xl light tracking:tighter leading:110">
+                    Deliberate
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                </p>
+            </div>
+            <div class="flex flex:col align-items:start gap:16 pb:48 text:left width:100%">
+                <h2 class="font:5xl light tracking:tighter leading:110">
+                    Do it
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                </p>
             </div>
         </div>
     </section>
