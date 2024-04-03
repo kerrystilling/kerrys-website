@@ -5,9 +5,24 @@
 
 .faded { opacity: 0.85; }
 
-.highlight {
-    background: linear-gradient(0deg, rgba(var(--ui-green), 1) 0%, rgba(var(--ui-green), 1) 100%);
-    background-position: 0% 70%;
-    background-repeat: no-repeat;
-    background-size: 100% 40%;
+
+.highlight-red {
+    background: rgba(var(--red), 1);
+    padding-left: 12px;
+    padding-right:16px;
+    border-radius: .75rem;
+}
+
+.highlight-creme {
+    background: #f7f7f0;
+    padding-left: 12px;
+    padding-right:16px;
+    border-radius: .75rem;
+}
+
+.faux-frame {
+    border:solid;
+    border-color: black;
+    padding-left:12px;
+    padding-right:16px;
 }
