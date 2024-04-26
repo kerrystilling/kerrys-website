@@ -8,28 +8,40 @@
 
 .highlight-red {
     background: rgba(var(--red), 1);
-    padding-left: 12px;
+    padding-left: 16px;
     padding-right:16px;
     border-radius: .75rem;
 }
 
 .highlight-creme {
     background: #f7f7f0;
-    padding-left: 12px;
+    padding-left: 16px;
     padding-right:16px;
     border-radius: .75rem;
 }
 
-.sm-faux-frame {
+.faux-frame {
     border: solid;
     border-color: black;
     padding-left: 12px;
     padding-right: 16px;
 }
 
-.faux-frame {
-    border: solid;
-    border-color: #f06752;
-    padding-left: 4px;
-    padding-right: 8px;
+$mobile-breakpoint: 768px;
+
+@media screen and (max-width: $mobile-breakpoint) {
+    .faux-frame {
+        padding-left: 4px;
+        padding-right: 8px;
+    }
+
+    .highlight-creme {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .highlight-red {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
 }
