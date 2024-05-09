@@ -35,7 +35,7 @@ $utilities: (
             128: 8rem,
             144: 9rem,
             8vw: 8vw,
-            12vw: 12vw,
+            12vw: 12.5vw,
         ),
     ),
     height: (
@@ -50,6 +50,7 @@ $utilities: (
         ),
     ),
     line-height: (
+        responsive: true,
         variants: (
             80: 0.8,
             90: 0.9,
@@ -60,6 +61,7 @@ $utilities: (
             672: 42rem,
             704: 44rem,
             736: 46rem,
+            896: 56rem,
             1920: 120rem,
         ),
     ),
@@ -82,6 +84,7 @@ $utilities: (
             88: 5.5rem,
             96: 6rem,
             112: 7rem,
+            70vh: 70vh,
         ),
     ),
     right: (

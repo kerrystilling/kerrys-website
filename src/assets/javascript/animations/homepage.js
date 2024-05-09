@@ -2,6 +2,9 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 gsap.registerPlugin(ScrollTrigger);
 
+// Create
+let mm = gsap.matchMedia();
+
 //Hero Animation
 function heroAnimate () {
   const duration = 0.5;
@@ -26,7 +29,7 @@ function heroAnimate () {
 heroAnimate();
 
 //Section 2 Images on Scroll
-function section2Animate () {
+function section2AnimateD () {
   const duration = 0;
   const tl = gsap.timeline({
     scrollTrigger: {
@@ -43,7 +46,24 @@ function section2Animate () {
     .to('[data-s2-img-3]', {x: 380, y: -300, rotation: 5}, '-=1')
     .to('[data-s2-img-4]', {x: -300, y: -260, rotation: 0}, '-=1')
 }
-section2Animate ();
+
+function section2AnimateM () {
+  const duration = 0;
+  const tl = gsap.timeline({
+    scrollTrigger: {
+      scrub: 1,
+      trigger: '[data-img-trigger-m]',
+      start: "top top",
+      end: 'bottom top',
+    },
+  });
+  
+  tl
+    .to('[data-s2-img-1]', {x: -200, y: -180, rotation: -15}, '-=1')
+    .to('[data-s2-img-2]', {x: 40, y: 190}, '-=1')
+    .to('[data-s2-img-3]', {x: 120, y: -160, rotation: 5}, '-=1')
+    .to('[data-s2-img-4]', {x: -100, y: -100, rotation: 0}, '-=1')
+}
 
 // Hover images
 function hoverImg () {
@@ -74,3 +94,13 @@ function hoverImg () {
 
 }
 hoverImg();
+
+// Desktop Animations
+mm.add("(min-width: 768px)", () => {
+  section2AnimateD();
+});
+
+// Mobile Animations
+mm.add("(max-width: 767px)", () => {
+  //section2AnimateM();
+});
