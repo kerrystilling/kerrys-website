@@ -28,7 +28,7 @@ function heroAnimate () {
 }
 heroAnimate();
 
-//Section 2 Images on Scroll
+//Section 2 Images on Scroll - Desktop
 function section2AnimateD () {
   const duration = 0;
   const tl = gsap.timeline({
@@ -44,9 +44,10 @@ function section2AnimateD () {
     .to('[data-s2-img-1]', {x: -500, y: -400, rotation: -15}, '-=1')
     .to('[data-s2-img-2]', {x: 200, y: 260}, '-=1')
     .to('[data-s2-img-3]', {x: 380, y: -300, rotation: 5}, '-=1')
-    .to('[data-s2-img-4]', {x: -300, y: -260, rotation: 0}, '-=1')
+    .to('[data-s2-img-4]', {x: -360, y: -260, rotation: -8}, '-=1')
 }
 
+//Section 2 Images on Scroll - Mobile
 function section2AnimateM () {
   const duration = 0;
   const tl = gsap.timeline({
