@@ -1,10 +1,10 @@
 ---
 layout: "main.njk"
-seoTitle: "Kerry Stilling: The search and tab title"
-seoDescription: "This is the description that shows up in search engines."
-ogTitle: "This is the title that shows up in social cards"
-ogDesc: "This is the description that shows up in social cards"
-ogImage: "/assets/images/og/default.png"
+seoTitle: "Kerry Stilling"
+seoDescription: "WI-based designer"
+ogTitle: "Kerry Stilling"
+ogDesc: "WI-based designer"
+ogImage: "/assets/images/og/kerry-og.webp"
 ogImageAlt: "This is the alt text for social cards images"
 theme: light
 changefreq: daily
@@ -14,7 +14,7 @@ changefreq: daily
 <main data-page="home" class="overflow:hidden">
 
     <div data-img-trigger-m class="relative">
-
+        {# Hero Section #}
         <section data-hero class="section section:py min-h:100vh sm:min-h:100vh bg:rose-md">
             <div class="container flex flex:col align-items:center gap:48 text:center">
                 <div class="relative flex flex:col align-items:center gap:16 w:100p">
@@ -56,6 +56,7 @@ changefreq: daily
             </div>
         </section>
 
+        {# Intro Section #}
         <section data-img-trigger class="section section:pt pb:160 bg:rose-md">
             <div class="container flex flex:row align-items:center justify-content:center gap:48 text:center">
                 <div class="relative flex flex:col align-items:center gap:16 px:24 py:24 text:left max-w:768 w:100p radius:2xl bg:red bg-opacity:20">
@@ -64,16 +65,16 @@ changefreq: daily
                     </div>
                     {# graphics #}
                     <div class="absolute w:100p h:100p flex align-items:center justify-content:center pointer-events:none">
-                        <div data-s2-img-1 class="absolute flex align-items:center justify-content:center left:n14 top:n192 sm:left:unset sm:top:unset w:144 sm:w:224 h:128 sm:h:192 transform rotate-n15 sm:rotate-15">
+                        <div data-s2-img-1 class="absolute flex align-items:center justify-content:center left:n20 top:n144 sm:left:unset sm:top:unset w:144 sm:w:224 h:128 sm:h:192 transform rotate-n15 sm:rotate-15">
                             <img width="256" height="342" class="object:cover w:100p h:100p radius:lg" src="/assets/images/deer_2x.webp">
                         </div>
-                        <div data-s2-img-2 class="absolute flex align-items:center justify-content:center right:n24 top:n192 sm:right:unset sm:top:unset w:128 sm:w:224 h:128 sm:h:224 z:1 transform rotate:6 sm:rotate:0">
+                        <div data-s2-img-2 class="absolute flex align-items:center justify-content:center right:n12 top:n192 sm:right:unset sm:top:unset w:128 sm:w:224 h:128 sm:h:224 z:1 transform rotate:0">
                             <img width="256" height="256" class="object:cover w:100p h:100p radius:lg" src="/assets/images/kayak.webp">
                         </div>
-                        <div data-s2-img-3 class="absolute flex align-items:center justify-content:center left:36 bottom:n96 sm:left:unset sm:bottom:unset w:160 sm:w:256 w:144 sm:h:192 transform rotate:n8 sm:rotate-15">
+                        <div data-s2-img-3 class="absolute flex align-items:center justify-content:center left:56 bottom:n112 sm:left:unset sm:bottom:unset w:160 sm:w:256 w:144 sm:h:192 transform rotate:n8 sm:rotate-15">
                             <img width="330" height="186" class="object:cover w:100p h:100p radius:lg" src="/assets/images/treeline.webp">
                         </div>
-                        <div data-s2-img-4 class="absolute flex align-items:center justify-content:center right:28 bottom:n144 sm:right:unset sm:bottom:unset w:128 sm:w:192 h:128 sm:h:192 transform" style="transform: rotate(6deg);">
+                        <div data-s2-img-4 class="absolute flex align-items:center justify-content:center right:n4 bottom:n96 sm:right:unset sm:bottom:unset w:128 sm:w:192 h:128 sm:h:192 transform" style="transform: rotate(6deg);">
                             <img width="816" height="816" class="object:cover w:100p h:100p radius:lg" src="/assets/images/gus.webp">
                         </div>
                     </div>
@@ -84,77 +85,28 @@ changefreq: daily
     </div>
 
     <div data-section3 class="bg:rose-md relative w:100p max-w:100p overflow:hidden">
-
+        {# Latest Work #}
         <section class="section section:py bg:rose-md">
-            <div class="container flex flex:col sm:grid sm:grid-cols:3 gap:16">
-                {% macro introCard(image,head,desc,bg) %}
-                    <div class="flex flex:col align-items:center justify-content:end gap:12 px:32 pb:32 text:center radius-t:full w:100p h:100p min-h:448 bg:{{ bg }}">
-                        <div class="relative flex flex:col align-items:center justify-content:center w:128 h:100p">
-                            {{ image }}
+            <div class="container flex align-items:center justify-content:center w:100p">
+                <div class="relative flex flex:col align-items:center justify-content:center bg:creme w:100p py:12 sm:py:16 px:12 sm:px:16 gap:24 radius:2xl sm:radius:4xl">
+                    <div class="w:100p h:384 sm:h:512 bg:black radius-tl:2xl radius-tr:2xl">
+                        <img src="" alt="">
+                        <div class="absolute top:28 sm:top:40 left:28 sm:left:40 font:sm sm:font:lg text:left bg:creme bg-opacity:70 py:6 px:10 radius:md color:black">
+                            <h2>Latest work</h2>
                         </div>
-                        <h2 class="font:5xl medium tracking:tighter leading:110">
-                            {{ head | safe }}
-                        </h2>
-                        <p class="font:2xl regular tracking:tighter leading:130">
-                            {{ desc | safe }}
-                        </p>
                     </div>
-                {% endmacro %}
-                <div class="relative">
-                    {{ introCard(
-                        image=graphics.designIllo('w:100p h:auto'),
-                        head='Design',
-                        desc='Started as a marketer, but went full send into digital design',
-                        bg="creme"
-                    )}}
-                    <div class="absolute top:n144 left:224 w:64 h:auto rotate-15">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 317 158">
-                            <path fill="rgba(var(--red), 1" fill-rule="evenodd" d="M0 158C.24 70.698 71.085 0 158.443 0c87.358 0 158.204 70.698 158.443 158h-53c-.27-58.036-47.4-105-105.499-105-58.1 0-105.23 46.964-105.5 105H0Z" clip-rule="evenodd"/>
-                        </svg>
-                     </div>
-                     <div class="absolute top:112 left:n16 w:48 h:auto rotate-15">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 205 205">
-                            <rect width="205" height="205" fill="#FF0080" rx="44"/>
-                        </svg>
-                     </div>
-                </div>
-                <div class="relative">
-                    {{ introCard(
-                        image=graphics.developIllo('w:96 h:auto'),
-                        head='Develop',
-                        desc='To better design and collaborate, I learn how to bring my vision to life',
-                        bg="creme"
-                     )}}
-                     <div data-object1 class="absolute bottom:n96 left:48 w:64 h:auto rotate-15">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 316 158">
-                            <path fill="#B2B2FF" fill-rule="evenodd" d="M316 0H0c.239 87.302 70.886 158 158 158S315.761 87.302 316 0Z" clip-rule="evenodd"/>
-                        </svg>
+                    <div class="flex flex:col sm:flex:row align-items:start sm:align-items:center justify-content:between w:100p pt:8 pb:16">
+                        <p class="font:2xl sm:font:5xl medium pb:12 sm:pb:0">How It Works <span class="color:black color-opacity:30 regular">/ Company page</span></p>
+                        <a href="#" class="relative btn btn:md sm:btn:lg btn:black btn:black:hover">View project</a>
                     </div>
-                </div>
-                <div class="relative">
-                    {{ introCard(
-                        image=graphics.illustrateIllo('w:96 h:auto'),
-                        head='Illustrate',
-                        desc='Leveled up from MS Paint, but I am still having just as much fun',
-                        bg="creme"
-                    )}}
-                    <div class="absolute top:n72 right:n72 w:48 h:48">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 205 205">
-                            <path fill="rgba(var(--yellow-md), 1" d="M0 62.65a62.37 62.37 0 0 0 14.31 39.85A62.37 62.37 0 0 0 0 142.35 62.68 62.68 0 0 0 62.7 205a62.47 62.47 0 0 0 39.8-14.24A62.47 62.47 0 0 0 142.3 205a62.68 62.68 0 0 0 62.7-62.65 62.37 62.37 0 0 0-14.31-39.85A62.37 62.37 0 0 0 205 62.65 62.68 62.68 0 0 0 142.3 0a62.47 62.47 0 0 0-39.8 14.24A62.47 62.47 0 0 0 62.7 0 62.68 62.68 0 0 0 0 62.65Z"/>
-                        </svg>
-                     </div>
-                    <div class="absolute bottom:96 right:n24 w:48 h:auto rotate-15">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 167 201">
-                            <path fill="rgba(var(--purple-md), 1" d="M133.68 0C152.08 0 167 15 167 33.5S152.08 67 133.68 67c18.4 0 33.32 15 33.32 33.5S152.08 134 133.68 134c18.4 0 33.32 15 33.32 33.5S152.08 201 133.68 201H33.32A33.4 33.4 0 0 1 0 167.5 33.4 33.4 0 0 1 33.32 134 33.4 33.4 0 0 1 0 100.5 33.4 33.4 0 0 1 33.32 67 33.4 33.4 0 0 1 0 33.5 33.4 33.4 0 0 1 33.32 0h100.36Z"/>
-                        </svg>
-                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="section section:py bg:red color:rose-md" style="border-radius: 96px 96px 0 0;">
-            <div class="container flex flex:col align-items:start justify-content:center gap:12 font:12xl tracking:tighter">
-                <h2 class="font:4xl color:black tracking:normal mb:24">Recent work at <span class="inline-flex highlight-creme">Hims & Hers</span></h2>
+        {# Other Work #}
+        <section class="section section:py bg:red color:rose-md radius:2xl radius-br:none radius-bl:none sm:radius:6xl">
+            <div class="container flex flex:col align-items:start justify-content:center gap:12 font:4xl sm:font:12xl tracking:tighter">
+                <h2 class=" font:lg sm:font:4xl color:black tracking:normal mb:24">Other work at <span class="inline-flex highlight-creme">Hims & Hers</span></h2>
                 <div class="relative w:100p h:2 bg:rose-md"></div>
                 {% macro imgHover(link, head, img, width, height) %}
                     <a href="{{ link }}" data-hover-img class="relative w:100p h:auto flex align-items:center">
@@ -166,7 +118,7 @@ changefreq: daily
                 {% endmacro %}
                 {{ imgHover(
                     link='#',
-                    head='Newsroom',
+                    head='Newsroom / CMS',
                     img='/assets/images/test.webp',
                     width='768',
                     height='768'
@@ -174,7 +126,7 @@ changefreq: daily
                 <div class="relative w:100p h:2 bg:rose-md"></div>
                 {{ imgHover(
                     link='#',
-                    head='Sex Chews',
+                    head='Sex Chews / LP',
                     img='/assets/images/test-2.webp',
                     width='900',
                     height='730'
@@ -182,7 +134,7 @@ changefreq: daily
                 <div class="relative w:100p h:2 bg:rose-md"></div>
                 {{ imgHover(
                     link='#',
-                    head='Multi Category LPs',
+                    head='Multi Category / LP',
                     img='/assets/images/test-3.webp',
                     width='768',
                     height='768'

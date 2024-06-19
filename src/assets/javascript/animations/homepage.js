@@ -42,8 +42,8 @@ function section2AnimateD () {
   
   tl
     .to('[data-s2-img-1]', {x: -500, y: -400, rotation: -15}, '-=1')
-    .to('[data-s2-img-2]', {x: 200, y: 260}, '-=1')
-    .to('[data-s2-img-3]', {x: 380, y: -300, rotation: 5}, '-=1')
+    .to('[data-s2-img-2]', {x: 280, y: 240, rotation: 6}, '-=1')
+    .to('[data-s2-img-3]', {x: 380, y: -270, rotation: 5}, '-=1')
     .to('[data-s2-img-4]', {x: -360, y: -260, rotation: -8}, '-=1')
 }
 
