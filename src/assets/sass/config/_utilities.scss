@@ -19,7 +19,6 @@ $utilities: (
         pseudos: (hover, group-hover, focus, group-focus),
         responsive: true,
     ),
-    
     border-radius: (
         variants: (
             4xl: 2.5rem,
@@ -27,7 +26,22 @@ $utilities: (
             10xl: 6rem,
         ),
     ),
-
+    border-bottom-left-radius: (
+        variants: (
+            18: 1.125rem,
+            4xl: 2.5rem,
+            6xl: 3.75rem,
+            10xl: 6rem,
+        ),
+    ),
+    border-bottom-right-radius: (
+        variants: (
+            18: 1.125rem,
+            4xl: 2.5rem,
+            6xl: 3.75rem,
+            10xl: 6rem,
+        ),
+    ),
     bottom: (
         variants: (
             unset: unset,

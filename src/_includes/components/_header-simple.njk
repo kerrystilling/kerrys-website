@@ -1,9 +1,9 @@
 {% import "components/_icons.njk" as icons %}
 
-<header data-header class="fixed sm:top:24 left:0 w:100p z:9 flex align-items:center justify-content:center">
-    <div data-header-inner class="relative w:100p sm:max-w:640 px:24 h:56 bg:white bg-opacity:40 backdrop backdrop-blur:xs radius:full flex align-items:center justify-content:between overflow:hidden">
+<header data-header class="fixed top:0 sm:top:24 left:0 w:100p z:9 flex align-items:center justify-content:center">
+    <div data-header-inner class="relative w:100p sm:max-w:640 pl:24 sm:pl:16 pr:24 sm:pr:12 h:56 bg:white bg-opacity:40 backdrop backdrop-blur:xs radius-bl:18 radius-br:18 sm:radius-bl:full sm:radius-br:full sm:radius-t:full flex align-items:center justify-content:between overflow:hidden">
         {# Nav Contents #}
-        <ol class="relative flex flex:row align-items:center justify-content:between w:100p font:lg medium leading:100">
+        <ul class="relative flex flex:row align-items:center justify-content:between w:100p font:lg medium leading:100">
             <li data-nav-logo>
                 <div class="flex flex:row align-items:center justify-content:center gap:8">
                     <div>
@@ -12,11 +12,15 @@
                     <p>Kerry Stilling</p>
                 </div>
             </li>
-            <div>
-                <li class="relative flex flex:row align-items:center justify-content:center gap:12">
-                    <a href="#" class="relative btn btn:sm btn:black btn:black:hover">Resume</a>
-                    <a href="#" class="relative btn btn:sm btn:black btn:black:hover">Latest work</a>
-                </li>
-            </div>
-        </ol>
+            <li>
+                <ul class="relative flex flex:row align-items:center justify-content:center gap:12">
+                    <li>
+                        <a href="#" class="relative btn btn:sm btn:black btn:black:hover">Resume</a>
+                    </li>
+                    <li>
+                        <a href="#" class="relative btn btn:sm btn:black btn:black:hover">Latest work</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
 </header>
