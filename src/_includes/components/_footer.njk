@@ -1,34 +1,21 @@
 {% import "components/_icons.njk" as icons %}
 
-<footer class="section py:192 bg:black color:white">
-    <div class="container flex flex:col align-items:center justify-content:center">
-        <div class="relative flex flex:col align-items:center justify-content:center w:100p">
-            <h2 class="relative w:100p font:12vw sm:font:8xl md:font:11xl lg:font:128 medium tracking:tighter leading:120 sm:leading:110">Let's <span class="font:serif italic">talk</span></h2>
+<footer class="section py:96 sm:py:192 bg:black color:white mt:n24 sm:mt:0">
+    <div class="container flex flex:col sm:flex:row align-items:center sm:align-items:start justify-content:center tracking:tight sm:h:192 gap:64 sm:gap:96">
+        <div class="relative flex flex:col align-items:center sm:align-items:start justify-content:start w:100p h:100p">
+            <h2 class="relative w:100p font:12vw sm:font:8xl medium text:center sm:text:left tracking:tighter leading:120 sm:leading:110">I'd <span class="font:serif italic">love</span> to hear from you!</h2>
         </div>
-        <div class="relative flex flex:col align-items:center justify-content:center w:100p">
-            
+        <div class="relative flex flex:col align-items:center sm:align-items:start justify-content:start w:100p h:100p font:3xl medium">
+            <p>LinkedIn</p>
+            <p>Resume</p>
+            <p>Instagram</p>
+            <p>Time portal</p>
+        </div>
+        <div data-ball class="relative flex flex:col align-items:center justify-content:center w:100p h:224 sm:h:100p bg:rose-md radius:2xl">
+            <div class="relative flex flex:col align-items:center justify-content:center font:2xl color:black medium gap:12">
+                <p>Drop me a line 💜</p>
+                <a href="#" class="relative btn btn:md sm:btn:lg btn:black btn:black:hover">Hey Kerry!</a>
+            </div>
         </div>
     </div>
 </footer>
-
-{#
-<div class="flex align-items:center gap:12">
-                {% macro footerSocial(link, icon) %}
-                    <a href="{{ link }}" class="w:32 h:32 sm:w:40 sm:h:40 flex align-items:center justify-content:center radius:full border:1 focus:primary bg-opacity:50 hover:bg-opacity:100 transition:100 {% if theme == 'dark' %}bg:sheet-1-i hover:color:link-hv-i{% else %}bg:sheet-1 hover:color:link-hv{% endif %}">
-                        {{ icon }}
-                    </a>
-                {% endmacro %}
-                {{ footerSocial(
-                    link=base.twitterLink,
-                    icon=icons.socialTwitter('w:16')
-                )}}
-                {{ footerSocial(
-                    link=base.linkedinLink,
-                    icon=icons.socialLinkedin('w:16')
-                )}}
-                {{ footerSocial(
-                    link=base.githubLink,
-                    icon=icons.socialGithub('w:18')
-                )}}
-            </div>
-#}
