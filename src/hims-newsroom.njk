@@ -1,0 +1,144 @@
+---
+layout: "main.njk"
+seoTitle: "Kerry Stilling: Hims Newsroom"
+seoDescription: "WI-based designer"
+ogTitle: "Kerry Stilling"
+ogDesc: "WI-based designer"
+ogImage: "/assets/images/og/kerry-og.webp"
+ogImageAlt: "This is the alt text for social cards images"
+year: "2024"
+role: "Design engineer"
+category: "Company page"
+theme: light
+changefreq: daily
+---
+{% import "components/_graphics.njk" as graphics %}
+
+
+<main class="overflow:hidden">
+    {# Hero #}
+     <section class="section py:96 sm:section:py sm:min-h:100vh bg:creme overflow:hidden">
+        <div class="absolute bottom:n20 sm:bottom:n48 opacity:4 w:100p top:center leading:100 flex align-items:center justify-content:center uppercase font:10xl sm:font:16vw">
+            <span class="space:nowrap">How it works how it work how it works how it works</span>
+        </div>
+            <div class="container flex align-items:center justify-content:center">
+                <div class="relative flex flex:col flex:col-reverse sm:flex:row align-items:center justify-content:center gap:24 sm:gap:48 sm:gap:96 text:left w:100p h:100p">
+                    {# Hero Img #}
+                    <div class="relative flex align-items:center justify-content:center w:100p h:320 sm:h:448 bg:black radius:2xl"></div>
+                    {# Hero Content #}
+                    <div class="relative w:100p h:100p py:24 sm:min-h:448 flex flex:col-reverse sm:flex:col align-items:start justify-content:between sm:max-w:448 gap:32 sm:gap:none">
+                        <div class="relative flex flex:col align-items:start justify-content:center gap:16">
+                            <h2 class="font:8xl sm:font:10xl medium leading:90 tracking:tighter"><span class="font:serif italic">Hims<br></span> How It Works</h2>
+                            <p class="relative font:lg leading:160">
+                                Ever wondered how Hims work? I worked closely with our staff designers to develop a page that answers this question in <span class="space:nowrap">a delightful</span> experience for patients and investors alike.
+                            </p>
+                            <a href="#" class="relative btn btn:md btn:black btn:black:hover">View page</a>
+                        </div>
+                        <div class="relative flex flex:col align-items:center justify-content:center text:left w:100p">
+                            <div class="relative flex sm:flex:row align-items:center justify-content:between w:100p bg:rose-md bg-opacity:70 radius:full py:12 px:24 font:xs sm:font:sm tracking:normal">
+                                <p><span class="medium">Role: </span> {{ role }}</p>
+                                <p><span class="medium">Project type: </span> {{ category }}</p>
+                                <p class="medium hidden sm:block">{{ year }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    {# Opening Section #}
+    <section class="section section:py bg:rose-md bg-opacity:20 radius:2xl sm:radius:6xl sm:radius-bl:none sm:radius-br:none">
+        <div class="container flex align-items:center justify-content:center">
+            <div class="relative w:100p flex flex:col align-items:center justify-content:center">
+                {# Content #}
+                <div class="relative w:100p flex flex:col sm:flex:row align-items:start justify-content:between gap:24 sm:gap:none mb:48 sm:mb:72">
+                    <h3 class="font:7xl medium leading:100 tracking:tight w:100p">
+                        Project overview
+                    </h3>
+                    <p class="w:100p relative font:lg leading:160 max-w:448">
+                        This page was created to visualize the process behind Hims–from the very first touchpoint of patient intake, to the delivery of treatment and continued support.
+                    </p>
+                </div>
+                {# Graphics #}
+                <div class="relative w:100p bg:black h:384 sm:h:512 radius:2xl">
+                    <img src="" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {# Deep Dive #}
+    <section class="section section:pb bg:rose-md bg-opacity:20">
+        <div class="relative w:100p sm:max-w:576 px:24 sm:px:0 flex flex:col align-items:center justify-content:center text:left">
+            {# Content #}
+            <div class="relative w:100p flex flex:col align-items:start justify-content:between mb:48 sm:mb:72">
+                <h3 class="w:100p relative font:lg leading:160 mb:16 font:4xl medium leading:100 tighter">Tooling challenge</h3>
+                <p class="w:100p relative font:lg leading:160">
+                    Before this project, I was developing pages for Hims using Webflow. To enhance Webflow’s built-in interactions, I frequently added custom JavaScript for additional customization. However, implementing custom JavaScript in Webflow required manual deployments to view changes. Moreover, the built-in Webflow interactions couldn’t achieve the specific effects the team wanted.
+                </p>
+            </div>
+            {# Content #}
+            <div class="relative w:100p flex flex:col align-items:start justify-content:between mb:48 sm:mb:72">
+                <h3 class="w:100p relative font:lg leading:160 mb:16 font:4xl medium leading:100 tighter">The approach</h3>
+                <p class="w:100p relative font:lg leading:160">
+                    As a result, I decided to build this page from scratch using code and a code editor. For tools, I used Eleventy as a static site generator, Nunjucks for templating, GSAP for animations, and UniformCSS as a utility framework. This setup allowed for hot reloading and instant previews. To facilitate collaboration between design and engineering, I chose Netlify for hosting, which provided deploy/branch previews for iterative development.
+                </p>
+            </div>
+            {# Graphics #}
+            <div class="relative w:100p bg:black h:384 radius:2xl mb:48 sm:mb:72">
+                <img src="" alt="">
+            </div>
+            {# Content #}
+            <div class="relative w:100p flex flex:col align-items:start justify-content:between mb:48 sm:mb:72">
+                <h3 class="w:100p relative font:lg leading:160 mb:16 font:4xl medium leading:100 tighter">Design challenges</h3>
+                <p class="w:100p relative font:lg leading:160">
+                    Beyond the technical aspect, I had to transform a highly ambitious design into a practical, performant, and responsive experience.<br><br>The initial designs were full of big ideas, fueled by the excitement surrounding the project. The team envisioned captivating ways to illustrate each step of the patient journey with Hims. However, some of these ideas couldn't be fully visualized in Figma.
+                </p>
+            </div>
+            {# Content #}
+            <div class="relative w:100p flex flex:col align-items:start justify-content:between mb:48 sm:mb:72">
+                <h3 class="w:100p relative font:lg leading:160 mb:16 font:4xl medium leading:100 tighter">Unlocking efficiencies</h3>
+                <p class="w:100p relative font:lg leading:160">
+                    By adopting this new workflow, I unlocked efficiencies and enabled better collaboration with the design team. On this page, I was tasked with implementing features not used in other Hims digital touchpoints. For example, how could we tie 3D animation to scrolling? This was new territory for us, but by using GSAP and sprites, I managed to keep the page performant while achieving the desired effect.<br><br>In many instances, the page was being designed on the fly during development. Thanks to the workflow I chose, I could iterate fast and come up with animations and designs more quickly than prototyping in Figma. This flexibility was crucial, allowing me to work efficiently within the tight timeline that couldn't be met using Hims' current development procedures. Working at this pace, the bottle neck went from engineering to design and 3D modeling. 
+                </p>
+            </div>
+            {# Graphics #}
+            <div class="relative w:100p bg:black h:384 radius:2xl mb:48 sm:mb:72">
+                <img src="" alt="">
+            </div>
+            {# Content #}
+            <div class="relative w:100p flex flex:col align-items:start justify-content:between mb:48 sm:mb:72">
+                <h3 class="w:100p relative font:lg leading:160 mb:16 font:4xl medium leading:100 tighter">Navigating feedback</h3>
+                <p class="w:100p relative font:lg leading:160">
+                    The number of stakeholders involved made feedback cycles quite complex, as there was significant interest in the project. Additionally, because this was a non-revenue-producing page focused on storytelling, the strategy was more subjective than usual. Throughout the process, I did my best to listen to my teammates' input and take action when it made sense. One downside of the rapid work and iteration was that it was challenging to bring things to a point of completion when so much was possible. 
+                </p>
+            </div>
+            {# Content #}
+            <div class="relative w:100p flex flex:col align-items:start justify-content:between">
+                <h3 class="w:100p relative font:lg leading:160 mb:16 font:4xl medium leading:100 tighter">Next up</h3>
+                <p class="w:100p relative font:lg leading:160">
+                    This page is now live and has been well-received by the team and external audiences. We're excited to see how it performs in the wild and are currently working through four additional corporate page revamps using this same process and team.
+                </p>
+            </div>
+        </div>
+    </section>
+
+     {# Next Project #}
+    <section class="section section:pb bg:rose-md bg-opacity:20">
+        <div class="container flex align-items:center justify-content:center">
+            {# Inner #}
+            <div class="relative w:100p flex flex:col sm:flex:row align-items:center justify-content:between py:24 sm:py:48 px:24 sm:px:48 bg:red sm:h:512 radius:2xl sm:radius:6xl gap:48 sm:gap:96 shadow:xl">
+                <div class="relative flex flex:col align-items:start justify-content:center gap:16 w:100p h:100p">
+                    <h4 class="font:lg sm:font:3xl color:black tracking:normal inline-flex highlight-creme">Next project</h4>
+                    <h3 class="relative font:6xl sm:font:10xl medium leading:110 tracking:tight color:rose-md w:100p mb:8">Multi Category Landing Pages</h3>
+                    <a href="#" class="relative btn btn:lg btn:black btn:black:hover">View project</a>
+                </div>
+                <div class="relative w:100p flex align-items:center justify-content:center h:320 sm:h:100p bg:creme radius:xl sm:radius:4xl">
+                    <img src="" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<script src="/assets/javascript/project.js"></script>
