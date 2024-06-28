@@ -24,7 +24,11 @@ changefreq: daily
             <div class="container flex align-items:center justify-content:center">
                 <div class="relative flex flex:col flex:col-reverse sm:flex:row align-items:center justify-content:center gap:24 sm:gap:48 sm:gap:96 text:left w:100p h:100p">
                     {# Hero Img #}
-                    <div class="relative flex align-items:center justify-content:center w:100p h:320 sm:h:448 bg:black radius:2xl"></div>
+                    <div class="relative flex align-items:center justify-content:center w:100p h:320 sm:h:448 radius:2xl overflow:hidden">
+                        <video autoplay loop muted playsinline width="448" height="608" class="w:100p h:auto absolute">
+                            <source src="/assets/images/hiw-hero-video.webm" type="video/webm" />
+                        </video>
+                    </div>
                     {# Hero Content #}
                     <div class="relative w:100p h:100p py:24 sm:min-h:448 flex flex:col-reverse sm:flex:col align-items:start justify-content:between sm:max-w:448 gap:32 sm:gap:none">
                         <div class="relative flex flex:col align-items:start justify-content:center gap:16">
@@ -60,8 +64,13 @@ changefreq: daily
                     </p>
                 </div>
                 {# Graphics #}
-                <div class="relative w:100p bg:black h:384 sm:h:512 radius:2xl">
+                <div class="relative w:100p flex align-items:center justify-content:center h:100p max-h:384 sm:max-h:512 radius:2xl overflow:hidden">
                     <img src="" alt="">
+                    <picture class="relative h:100p">
+                        <source media="(min-width: 768px)" srcset="/assets/images/hiw_project_1_d.webp">
+                        <source media="(max-width: 767px)" srcset="/assets/images/hiw_project_1_m.webp">
+                        <img src="/assets/images/hiw_project_1_d.webp" class="relative w:100p h:auto object:cover" loading="lazy" width="1120" height="512" alt="How it works project">
+                    </picture>
                 </div>
             </div>
         </div>
@@ -84,9 +93,11 @@ changefreq: daily
                     As a result, I decided to build this page from scratch using code and a code editor. For tools, I used Eleventy as a static site generator, Nunjucks for templating, GSAP for animations, and UniformCSS as a utility framework. This setup allowed for hot reloading and instant previews. To facilitate collaboration between design and engineering, I chose Netlify for hosting, which provided deploy/branch previews for iterative development.
                 </p>
             </div>
-            {# Graphics #}
-            <div class="relative w:100p bg:black h:384 radius:2xl mb:48 sm:mb:72">
-                <img src="" alt="">
+            {# Video #}
+            <div class="relative w:100p h:384 radius:2xl mb:48 sm:mb:72 overflow:hidden">
+                <video autoplay loop muted playsinline width="576" height="384" class="w:100p h:auto absolute">
+                    <source src="/assets/images/hiw-compounding-video.webm" type="video/webm" />
+                </video>
             </div>
             {# Content #}
             <div class="relative w:100p flex flex:col align-items:start justify-content:between mb:48 sm:mb:72">
@@ -102,10 +113,13 @@ changefreq: daily
                     By adopting this new workflow, I unlocked efficiencies and enabled better collaboration with the design team. On this page, I was tasked with implementing features not used in other Hims digital touchpoints. For example, how could we tie 3D animation to scrolling? This was new territory for us, but by using GSAP and sprites, I managed to keep the page performant while achieving the desired effect.<br><br>In many instances, the page was being designed on the fly during development. Thanks to the workflow I chose, I could iterate fast and come up with animations and designs more quickly than prototyping in Figma. This flexibility was crucial, allowing me to work efficiently within the tight timeline that couldn't be met using Hims' current development procedures. Working at this pace, the bottle neck went from engineering to design and 3D modeling. 
                 </p>
             </div>
-            {# Graphics #}
-            <div class="relative w:100p bg:black h:384 radius:2xl mb:48 sm:mb:72">
-                <img src="" alt="">
+            {# Video #}
+            <div class="relative w:100p h:384 radius:2xl mb:48 sm:mb:72 overflow:hidden">
+                <video autoplay loop muted playsinline width="576" height="384" class="w:100p h:auto absolute">
+                    <source src="/assets/images/hiw-box-video.webm" type="video/webm" />
+                </video>
             </div>
+            
             {# Content #}
             <div class="relative w:100p flex flex:col align-items:start justify-content:between mb:48 sm:mb:72">
                 <h3 class="w:100p relative font:lg leading:160 mb:16 font:4xl medium leading:100 tighter">Navigating feedback</h3>

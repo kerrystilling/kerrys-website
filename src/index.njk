@@ -90,12 +90,18 @@ changefreq: daily
         <section class="section section:py bg:rose-md">
             <div class="container flex align-items:center justify-content:center w:100p">
                 <div class="relative flex flex:col align-items:center justify-content:center bg:creme w:100p py:12 sm:py:16 px:12 sm:px:16 gap:24 radius:2xl sm:radius:4xl">
-                    <div class="w:100p flex align-items:center justify-content:center h:384 sm:h:512 radius-tl:2xl radius-tr:2xl overflow:hidden">
-                        <img src="/assets/images/how-it-works-cover.webp" alt="" class="w:100p h:100p object:cover">
+                   {# Image #}
+                    <div class="w:100p flex align-items:center justify-content:center h:100p max-h:384 sm:max-h:512 radius-tl:2xl radius-tr:2xl overflow:hidden">
+                        <picture class="relative h:100p">
+                            <source media="(min-width: 768px)" srcset="/assets/images/how-it-works-cover.webp">
+                            <source media="(max-width: 767px)" srcset="/assets/images/how-it-works-cover-m.webp">
+                            <img src="/assets/images/how-it-works-cover.webp" class="relative w:100p h:auto object:cover" loading="lazy" width="1120" height="512" alt="How it works project">
+                        </picture>
                         <div class="absolute top:28 sm:top:40 left:28 sm:left:40 font:sm sm:font:lg text:left bg:creme bg-opacity:90 py:6 px:10 radius:md color:black">
                             <h2>Latest work</h2>
                         </div>
                     </div>
+                    {# Content #}
                     <div class="flex flex:col sm:flex:row align-items:start sm:align-items:center justify-content:between w:100p pt:8 pb:16">
                         <p class="font:2xl sm:font:5xl medium pb:12 sm:pb:0">How It Works <span class="color:black color-opacity:30 regular">/ Company page</span></p>
                         <a href="/hims-how-it-works" class="relative btn btn:md sm:btn:lg btn:black btn:black:hover">View project</a>
