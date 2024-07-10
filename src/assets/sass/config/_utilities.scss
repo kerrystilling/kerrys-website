@@ -15,6 +15,9 @@ $utilities: (
             transparent: transparent,
         ),
     ),
+    background-opacity: (
+        responsive: true,
+    ),
     border: (
         pseudos: (hover, group-hover, focus, group-focus),
         responsive: true,

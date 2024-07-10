@@ -43,7 +43,7 @@
     </head>
 
     {# Body #}
-    <body data-barba="wrapper" class="w:100p max-w:100p font:md tracking:tight leading:160 font:sans kern:normal antialiased bg:creme">
+    <body data-barba="wrapper" class="w:100p max-w:100p font:md tracking:tight leading:160 font:sans kern:normal antialiased {%if bg%}bg:{{bg}}{%else%}bg:creme{%endif%}">
 
         <div class="relative w:100p">
 

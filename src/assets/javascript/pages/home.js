@@ -49,21 +49,10 @@ function section2AnimateD () {
 
 //Section 2 Images on Scroll - Mobile
 function section2AnimateM () {
-  const duration = 0;
-  const tl = gsap.timeline({
-    scrollTrigger: {
-      scrub: 1,
-      trigger: '[data-img-trigger-m]',
-      start: "top top",
-      end: 'bottom top',
-    },
-  });
+  let tl = gsap.timeline({});
   
   tl
-    .to('[data-s2-img-1]', {x: -200, y: -180, rotation: -15}, '-=1')
-    .to('[data-s2-img-2]', {x: 40, y: 190}, '-=1')
-    .to('[data-s2-img-3]', {x: 120, y: -160, rotation: 5}, '-=1')
-    .to('[data-s2-img-4]', {x: -100, y: -100, rotation: 0}, '-=1')
+    .to('[data-wi-imgs]', {opacity: 1, y: 0, duration: 1,}, 3)
 }
 
 // Hover images
@@ -103,5 +92,5 @@ mm.add("(min-width: 768px)", () => {
 
 // Mobile Animations
 mm.add("(max-width: 767px)", () => {
-  //section2AnimateM();
+  section2AnimateM();
 });
